@@ -1,41 +1,54 @@
 import media
 import fresh_tomatoes
 
+movies = []
+
 # Toy story
-title = "Toy story"
-poster_image_url = "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg"
-trailer_youtube_url = "https://www.youtube.com/watch?v=KYz2wyBy3kc"
-toy_story = media.Movie(title, poster_image_url, trailer_youtube_url)
+movie = (
+    "Toy story",
+    "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
+    "https://www.youtube.com/watch?v=KYz2wyBy3kc",
+)
+movies.append(media.Movie(*movie))
 
 # Avatar
-title = "Avatar"
-poster_image_url = "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg"
-trailer_youtube_url = "https://www.youtube.com/watch?v=cRdxXPV9GNQ"
-avatar = media.Movie(title, poster_image_url, trailer_youtube_url)
+movie = (
+    "Avatar",
+    "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg",
+    "https://www.youtube.com/watch?v=cRdxXPV9GNQ",
+)
+movies.append(media.Movie(*movie))
 
 # School of rock
-title = "School of rock"
-poster_image_url = "https://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg"
-trailer_youtube_url = "https://www.youtube.com/watch?v=XCwy6lW5Ixc"
-school_of_rock = media.Movie(title, poster_image_url, trailer_youtube_url)
+movie = (
+    "School of rock",
+    "https://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg",
+    "https://www.youtube.com/watch?v=XCwy6lW5Ixc",
+)
+movies.append(media.Movie(*movie))
 
 # Ratatouille
-title = "Ratatouille"
-poster_image_url = "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg"
-trailer_youtube_url = "https://www.youtube.com/watch?v=c3sBBRxDAqk"
-ratatouille = media.Movie(title, poster_image_url, trailer_youtube_url)
+movie = (
+    "Ratatouille",
+    "https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
+    "https://www.youtube.com/watch?v=c3sBBRxDAqk",
+)
+movies.append(media.Movie(*movie))
 
 # Midnight in Paris
-title = "Midnight in Paris"
-poster_image_url = "https://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg"
-trailer_youtube_url = "https://www.youtube.com/watch?v=BYRWfS2s2v4"
-midnight_in_paris = media.Movie(title, poster_image_url, trailer_youtube_url)
+movie = (
+    "Midnight in Paris",
+    "https://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg",  # NOQA
+    "https://www.youtube.com/watch?v=BYRWfS2s2v4",
+)
+movies.append(media.Movie(*movie))
 
 # Hunger games
-title = "Hunger games"
-poster_image_url = "https://upload.wikimedia.org/wikipedia/en/3/39/The_Hunger_Games_cover.jpg"
-trailer_youtube_url = "https://www.youtube.com/watch?v=4S9a5V9ODuY"
-hunger_games = media.Movie(title, poster_image_url, trailer_youtube_url)
+movie = (
+    "Hunger games",
+    "https://upload.wikimedia.org/wikipedia/en/3/39/The_Hunger_Games_cover.jpg",  # NOQA
+    "https://www.youtube.com/watch?v=4S9a5V9ODuY",
+)
+movies.append(media.Movie(*movie))
 
-movies = [toy_story, avatar, school_of_rock, ratatouille, midnight_in_paris, hunger_games]
 fresh_tomatoes.open_movies_page(movies)
