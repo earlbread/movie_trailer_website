@@ -10,9 +10,9 @@ This application generates a Movie Trailer Website where users can see your favo
 
 To get started with the app, clone the repo and run *entertainment_center.py*.
 
-    git clone https://github.com/earlbread/movie_trailer_website.git
-    cd movie_trailer_website
-    python ./entertainment_center.py
+    $ git clone https://github.com/earlbread/movie_trailer_website.git
+    $ cd movie_trailer_website
+    $ python ./entertainment_center.py
 
 
 To install python, see the documentation here: https://www.python.org
