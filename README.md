@@ -1,6 +1,6 @@
 # Movie trailer website
 
-This is the first project of 
+This is the first project of
 [*Full Stack Web Develper Nanodegree*][1]
 by [Udacity][2].
 
